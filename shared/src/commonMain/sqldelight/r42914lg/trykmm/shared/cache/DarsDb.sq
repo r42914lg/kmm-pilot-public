@@ -1,0 +1,15 @@
+
+
+CREATE TABLE LocalAddress (
+    id INTEGER NOT NULL PRIMARY KEY,
+    address_id INTEGER NOT NULL
+);
+
+insertLocalAddress:
+INSERT INTO LocalAddress(id, address_id) VALUES(1, ?);
+
+removeLocalAddress:
+DELETE FROM LocalAddress;
+
+selectLocalAddressById:
+SELECT * FROM LocalAddress WHERE id = 1;

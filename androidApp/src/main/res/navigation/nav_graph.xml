@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/onboardingFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="r42914lg.trykmm.android.ui.onboarding.OnboardingFragment"
+        android:label="onboarding"
+        tools:layout="@layout/fragment_onboarding">
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="r42914lg.trykmm.android.ui.main.mainPage.MainPageFragment"
+        android:label="main"
+        tools:layout="@layout/fragment_main_page">
+    </fragment>
+
+    <dialog
+        android:id="@+id/listAddressBsd"
+        android:name="r42914lg.trykmm.android.ui.main.mainPage.address.ListAddressBsd"
+        android:label="listAddressBsd"
+        tools:layout="@layout/bsd_list_address">
+    </dialog>
+
+</navigation>
